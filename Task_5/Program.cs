@@ -13,16 +13,10 @@ namespace Task_5
 
             Console.OutputEncoding = Encoding.Unicode;
 
-            Title title = new Title();
-            title.Content = "Контракт";
+            Document document = new Document("Контракт");
+            document.Body = "Тіло контракту...";
+            document.Footer = "Директор: Іванов І.І.";
 
-            Body body = new Body();
-            body.Content = "Тіло контракту...";
-
-            Footer footer = new Footer();
-            footer.Content = "Директор: Іванов І.І.";
-
-            Document document = new Document(title, body, footer);
             document.Show();
 
             Console.ReadKey();
