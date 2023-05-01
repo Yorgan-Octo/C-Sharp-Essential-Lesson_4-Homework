@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task_5
+{
+    internal class Body : DocumentTemplate
+    {
+        public override void Show()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(Content);
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }
+    }
+}
